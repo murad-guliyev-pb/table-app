@@ -7,6 +7,7 @@ import TablePagination from "@material-ui/core/TablePagination";
 import TableRow from "@material-ui/core/TableRow";
 import React, { useState } from "react";
 
+// eslint-disable-next-line
 import { IEmployee } from "../helpers/models";
 import TableHead from "./tableHead";
 import Row from "./tableRow";

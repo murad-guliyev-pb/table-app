@@ -1,13 +1,7 @@
 {
     "parser": "@typescript-eslint/parser",
-    "extends": [
-        "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:prettier/recommended"
-    ],
-    "plugins": [
-        "simple-import-sort"
-    ],
+    "extends": ["plugin:react/recommended", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
+    "plugins": ["simple-import-sort"],
     "parserOptions": {
         "ecmaVersion": 2018,
         "sourceType": "module",

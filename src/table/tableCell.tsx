@@ -4,6 +4,7 @@ import TableCell from "@material-ui/core/TableCell";
 import TextField from "@material-ui/core/TextField";
 import React from "react";
 
+// eslint-disable-next-line
 import { IEmployee } from "../helpers/models";
 
 interface IProps {
