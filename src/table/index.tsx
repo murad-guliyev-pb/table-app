@@ -53,7 +53,7 @@ const Table: React.FC<IProps> = ({
     };
 
     return (
-        <TableContainer component={Paper} elevation={2}>
+        <TableContainer component={Paper} elevation={2} variant="outlined">
             <TableComponent>
                 <TableHead />
                 <TableBody>

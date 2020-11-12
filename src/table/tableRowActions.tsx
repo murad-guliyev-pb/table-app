@@ -19,13 +19,13 @@ const TableRowActions: React.FC<IProps> = ({
     onRestore,
 }): JSX.Element => {
     const renderEditButton = () => (
-        <Button color="primary" disabled={isDeleted} onClick={onEdit}>
+        <Button style={{ color: "#1976d2" }} disabled={isDeleted} onClick={onEdit}>
             Edit
         </Button>
     );
 
     const renderSaveButton = () => (
-        <Button color="primary" onClick={onSave}>
+        <Button style={{ color: "#1976d2" }} onClick={onSave}>
             Save
         </Button>
     );

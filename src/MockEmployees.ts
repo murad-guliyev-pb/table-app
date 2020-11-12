@@ -8,7 +8,7 @@ export const employeesList: IEmployee[] = [
         surname: "Surname One",
         dateOfBirth: "01-01-1991",
         position: "Position One",
-        phoneNumber: "+994511111111",
+        phoneNumber: "+994511111",
     },
     {
         id: "2",
@@ -16,7 +16,7 @@ export const employeesList: IEmployee[] = [
         surname: "Surname Two",
         dateOfBirth: "02-02-1992",
         position: "Position Two",
-        phoneNumber: "+994511111112",
+        phoneNumber: "+994511112",
     },
     {
         id: "3",
@@ -24,7 +24,7 @@ export const employeesList: IEmployee[] = [
         surname: "Surname Three",
         dateOfBirth: "03-03-1993",
         position: "Position Three",
-        phoneNumber: "+994511111113",
+        phoneNumber: "+994511113",
     },
     {
         id: "4",
@@ -32,7 +32,7 @@ export const employeesList: IEmployee[] = [
         surname: "Surname Four",
         dateOfBirth: "04-04-1994",
         position: "Position Four",
-        phoneNumber: "+994511111114",
+        phoneNumber: "+994511114",
     },
     {
         id: "5",
@@ -40,7 +40,7 @@ export const employeesList: IEmployee[] = [
         surname: "Surname Five",
         dateOfBirth: "05-05-1995",
         position: "Position Five",
-        phoneNumber: "+994511111115",
+        phoneNumber: "+994511115",
     },
     {
         id: "6",
@@ -48,7 +48,7 @@ export const employeesList: IEmployee[] = [
         surname: "Surname Six",
         dateOfBirth: "06-06-1996",
         position: "Position Six",
-        phoneNumber: "+994511111116",
+        phoneNumber: "+994511116",
     },
     {
         id: "7",
@@ -56,7 +56,7 @@ export const employeesList: IEmployee[] = [
         surname: "Surname Seven",
         dateOfBirth: "07-07-1997",
         position: "Position Seven",
-        phoneNumber: "+994511111117",
+        phoneNumber: "+994511117",
     },
     {
         id: "8",
@@ -64,7 +64,7 @@ export const employeesList: IEmployee[] = [
         surname: "Surname Eight",
         dateOfBirth: "08-08-1998",
         position: "Position Eight",
-        phoneNumber: "+994511111118",
+        phoneNumber: "+994511118",
     },
     {
         id: "9",
@@ -72,7 +72,7 @@ export const employeesList: IEmployee[] = [
         surname: "Surname Nine",
         dateOfBirth: "09-09-1999",
         position: "Position Eight",
-        phoneNumber: "+994511111119",
+        phoneNumber: "+994511119",
     },
     {
         id: "10",
@@ -80,7 +80,7 @@ export const employeesList: IEmployee[] = [
         surname: "Surname Ten",
         dateOfBirth: "10-10-2000",
         position: "Position Ten",
-        phoneNumber: "+994511111120",
+        phoneNumber: "+994511120",
     },
     {
         id: "11",
@@ -88,7 +88,7 @@ export const employeesList: IEmployee[] = [
         surname: "Surname Eleven",
         dateOfBirth: "11-11-2001",
         position: "Position Eleven",
-        phoneNumber: "+994511111121",
+        phoneNumber: "+994511121",
     },
     {
         id: "12",
@@ -96,6 +96,6 @@ export const employeesList: IEmployee[] = [
         surname: "Surname Twelve",
         dateOfBirth: "12-12-2002",
         position: "Position Twelve",
-        phoneNumber: "+994511111122",
+        phoneNumber: "+994511122",
     },
 ];

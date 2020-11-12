@@ -105,46 +105,60 @@ const App = (): JSX.Element => {
     };
 
     return (
-        <Container maxWidth={"lg"}>
-            <Box marginY={10}>
-                <Box marginBottom={2}>
-                    <Grid container direction="row" justify="flex-end" alignItems="flex-end">
-                        <Box marginRight={1}>
-                            <Typography variant="subtitle1" component="p">
-                                Search:
-                            </Typography>
-                        </Box>
-                        <TextField value={searchValue} onChange={(event) => setSearchValue(event.target.value)} />
-                    </Grid>
-                </Box>
-                {employees.length > 0 && (
-                    <Table
-                        employees={getEmployees()}
-                        deletedEmployees={deletedEmployees}
-                        onEmployeeChange={handleEmployeeChange}
-                        onEmployeeDelete={handleEmployeeDelete}
-                        onEmployeeRestore={handleEmployeeRestore}
-                    />
-                )}
-                <Box marginTop={2}>
-                    <Grid container direction="row" justify="flex-end" alignItems="baseline">
-                        <Box marginRight={1}>
-                            <Button variant="contained" color="primary" onClick={() => setIsSubmited(true)}>
-                                Submit
-                            </Button>
-                        </Box>
-                        <Button variant="contained" color="secondary" onClick={resetToInitial}>
-                            Reset to initial
-                        </Button>
-                    </Grid>
-                </Box>
-                {isSubmited && (
-                    <Box marginTop={5}>
-                        <UpdatedEmployees deletedEmployees={deletedEmployees} editedEmployees={editedEmployees} />
-                    </Box>
-                )}
+        <>
+            <Box style={{ backgroundColor: "#1976d2", color: "white", padding: "12px 0" }}>
+                <Grid container direction="row" justify="center">
+                    <Typography variant="h4" component="h4">
+                        Table Application
+                    </Typography>
+                </Grid>
             </Box>
-        </Container>
+            <Container maxWidth={"lg"}>
+                <Box marginY={5}>
+                    <Box marginBottom={2}>
+                        <Grid container direction="row" justify="flex-end" alignItems="flex-end">
+                            <Box marginRight={1}>
+                                <Typography variant="subtitle1" component="p">
+                                    Search:
+                                </Typography>
+                            </Box>
+                            <TextField value={searchValue} onChange={(event) => setSearchValue(event.target.value)} />
+                        </Grid>
+                    </Box>
+                    {employees.length > 0 && (
+                        <Table
+                            employees={getEmployees()}
+                            deletedEmployees={deletedEmployees}
+                            onEmployeeChange={handleEmployeeChange}
+                            onEmployeeDelete={handleEmployeeDelete}
+                            onEmployeeRestore={handleEmployeeRestore}
+                        />
+                    )}
+                    <Box marginTop={2}>
+                        <Grid container direction="row" justify="flex-end" alignItems="baseline">
+                            <Box marginRight={1}>
+                                <Button
+                                    style={{ backgroundColor: "#1976d2" }}
+                                    variant="contained"
+                                    color="primary"
+                                    onClick={() => setIsSubmited(true)}
+                                >
+                                    Submit
+                                </Button>
+                            </Box>
+                            <Button variant="contained" color="secondary" onClick={resetToInitial}>
+                                Reset to initial
+                            </Button>
+                        </Grid>
+                    </Box>
+                    {isSubmited && (
+                        <Box marginTop={5}>
+                            <UpdatedEmployees deletedEmployees={deletedEmployees} editedEmployees={editedEmployees} />
+                        </Box>
+                    )}
+                </Box>
+            </Container>
+        </>
     );
 };
 

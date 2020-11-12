@@ -15,5 +15,5 @@ export const validateDateOfBirth = (value: string): boolean => {
 };
 
 export const validatePhoneNumber = (value: string): boolean => {
-    return /^[\d+-]+$/.test(value);
+    return /^[\d +-]+$/.test(value);
 };
