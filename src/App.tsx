@@ -17,7 +17,6 @@ const App = (): JSX.Element => {
     const [searchValue, setSearchValue] = useState<string>("");
 
     // Helpers
-
     const isEmployeeEqualToInitial = (employee: IEmployee) => {
         const initialEmployee = employeesList.find((item) => item.id === employee.id);
         return isEqual(employee, initialEmployee);
@@ -53,7 +52,6 @@ const App = (): JSX.Element => {
     };
 
     // Handlers
-
     const handleEmployeeChange = (employee: IEmployee) => {
         if (isEmployeeEqualToInitial(employee)) {
             removeEmployeeFromEditedEmployees(employee.id);

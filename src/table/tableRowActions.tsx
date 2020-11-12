@@ -1,7 +1,7 @@
 import Button from "@material-ui/core/Button";
 import React from "react";
 
-interface IProps {
+export interface IProps {
     isEditing: boolean;
     isDeleted: boolean;
     onEdit: () => void;

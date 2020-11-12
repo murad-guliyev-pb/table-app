@@ -1,5 +1,5 @@
-import TableCell from "@material-ui/core/TableCell";
-import TableRow from "@material-ui/core/TableRow";
+import TableCellComponent from "@material-ui/core/TableCell";
+import TableRowComponent from "@material-ui/core/TableRow";
 import React, { useEffect, useState } from "react";
 
 // eslint-disable-next-line
@@ -11,10 +11,10 @@ import {
     validatePosition,
     validateSurname,
 } from "../helpers/utils";
-import Cell from "./tableCell";
+import TableCell from "./tableCell";
 import TableRowActions from "./tableRowActions";
 
-interface IProps {
+export interface IProps {
     employeeData: IEmployee;
     deletedEmployees: IEmployee[];
     isEditing: boolean;
@@ -24,7 +24,7 @@ interface IProps {
     onEmployeeRestore: (employeeId: string) => void;
 }
 
-const Row: React.FC<IProps> = ({
+const TableRow: React.FC<IProps> = ({
     employeeData,
     deletedEmployees,
     isEditing,
@@ -111,18 +111,19 @@ const Row: React.FC<IProps> = ({
     };
 
     return (
-        <TableRow style={{ backgroundColor: isDeleted ? "rgba(220, 0, 78, 0.08)" : "inherit" }}>
+        <TableRowComponent style={{ backgroundColor: isDeleted ? "rgba(220, 0, 78, 0.08)" : "inherit" }}>
             {keys.map((key) => (
-                <Cell
-                    key={key}
-                    errors={errors}
-                    name={key}
-                    isEditing={isEditing}
-                    value={employee[key]}
-                    onChange={handleCellChange}
-                />
+                <TableCellComponent key={key}>
+                    <TableCell
+                        errors={errors}
+                        name={key}
+                        isEditing={isEditing}
+                        value={employee[key]}
+                        onChange={handleCellChange}
+                    />
+                </TableCellComponent>
             ))}
-            <TableCell>
+            <TableCellComponent>
                 <TableRowActions
                     isEditing={isEditing}
                     isDeleted={isDeleted}
@@ -131,9 +132,9 @@ const Row: React.FC<IProps> = ({
                     onDelete={handleDelete}
                     onRestore={handleRestore}
                 />
-            </TableCell>
-        </TableRow>
+            </TableCellComponent>
+        </TableRowComponent>
     );
 };
 
-export default Row;
+export default TableRow;
