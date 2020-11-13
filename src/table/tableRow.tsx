@@ -2,7 +2,6 @@ import TableCellComponent from "@material-ui/core/TableCell";
 import TableRowComponent from "@material-ui/core/TableRow";
 import React, { useEffect, useState } from "react";
 
-// eslint-disable-next-line
 import { IEmployee } from "../helpers/models";
 import {
     validateDateOfBirth,

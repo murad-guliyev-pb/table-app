@@ -3,7 +3,6 @@ import Box from "@material-ui/core/Box";
 import { isEqual } from "lodash";
 import React, { useState } from "react";
 
-// eslint-disable-next-line
 import { IEmployee } from "./helpers/models";
 import { employeesList } from "./MockEmployees";
 import Table from "./table";

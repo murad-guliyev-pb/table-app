@@ -1,7 +1,6 @@
 import Box from "@material-ui/core/Box";
 import React from "react";
 
-// eslint-disable-next-line
 import { IEmployee } from "./helpers/models";
 
 interface IProps {

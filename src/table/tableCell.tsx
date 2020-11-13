@@ -3,7 +3,6 @@ import Box from "@material-ui/core/Box";
 import TextField from "@material-ui/core/TextField";
 import React from "react";
 
-// eslint-disable-next-line
 import { IEmployee } from "../helpers/models";
 
 export interface IProps {

@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 import { IEmployee } from "./helpers/models";
 
 export const employeesList: IEmployee[] = [

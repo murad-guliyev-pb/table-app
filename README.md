@@ -21,13 +21,13 @@ Launches the test runner in the interactive watch mode.\
 
 This project was bootstrapped with Create React App.
 
-React
-Typescript
-Material ui
-Jest
-React-testing-library
-eslint
-prettier
+React\
+Typescript\
+Material ui\
+Jest\
+React-testing-library\
+eslint\
+prettier\
 
 ## Needs improvement
 
