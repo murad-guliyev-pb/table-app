@@ -23,11 +23,11 @@ This project was bootstrapped with Create React App.
 
 React\
 Typescript\
-Material ui\
+Material-UI\
 Jest\
 React-testing-library\
 eslint\
-prettier\
+prettier
 
 ## Needs improvement
 
