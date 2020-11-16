@@ -12,7 +12,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `npm test`
 
-Launches tests.\
+Launches tests.
 
 ## Used technologies
 
@@ -27,9 +27,11 @@ React-testing-library\
 eslint\
 prettier
 
-## Needs to improve
+## Need to do
 
 1. Add skeleton
 2. Add mock server (fetching data)
 3. Support SSR
 4. Implement css in js
+
+An improved version you can find [here](table-app-2.vercel.app).
