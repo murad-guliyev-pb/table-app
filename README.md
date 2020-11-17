@@ -34,4 +34,4 @@ prettier
 3. Support SSR
 4. Implement css in js
 
-An improved version you can find [here](table-app-2.vercel.app).
+An improved version you can find [here](https://github.com/murad-guliyev-pb/table-app-2)
